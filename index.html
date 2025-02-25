@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harsh Mevada - Personal Dashboard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .animate-fadeIn {
+            animation: fadeIn 1s ease-in-out;
+        }
+        .quick-link:hover {
+            transform: scale(1.1);
+            transition: transform 0.2s ease-in-out;
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-r from-gray-900 to-gray-800 text-gray-100">
+    <div class="min-h-screen flex flex-col items-center justify-center p-6">
+        <h1 class="text-5xl font-extrabold text-white animate-fadeIn mb-8">Welcome to Your Personal Dashboard</h1>
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 w-full max-w-5xl animate-fadeIn">
+            <div class="bg-gray-800 p-8 rounded-2xl shadow-xl hover:scale-105 transition-transform border border-gray-700">
+                <h2 class="text-2xl font-semibold text-white">Weather</h2>
+                <p class="text-gray-400 mt-2">☀️ Sunny, 25°C</p>
+            </div>
+            <div class="bg-gray-800 p-8 rounded-2xl shadow-xl hover:scale-105 transition-transform border border-gray-700">
+                <h2 class="text-2xl font-semibold text-white">To-Do List</h2>
+                <ul class="text-gray-400 mt-2 space-y-1">
+                    <li>✅ Complete Portfolio Update</li>
+                    <li>📌 Work on New Project</li>
+                </ul>
+            </div>
+            <div class="bg-gray-800 p-8 rounded-2xl shadow-xl hover:scale-105 transition-transform border border-gray-700">
+                <h2 class="text-2xl font-semibold text-white">Quick Links</h2>
+                <ul class="text-gray-400 mt-2 space-y-3">
+                    <li>
+                        <a href="https://github.com/MevadaHarsh" class="flex items-center space-x-3 hover:text-blue-400 transition-colors quick-link">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" class="w-5 h-5">
+                            <span class="text-lg">GitHub</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/harsh-mevada-471b43306/" class="flex items-center space-x-4 hover:text-blue-400 quick-link">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" alt="LinkedIn" class="w-5 h-5">
+                            <span class="text-lg">LinkedIn</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+    <footer class="text-center py-6 mt-12 bg-gray-800 animate-fadeIn w-full border-t border-gray-700">
+        <p class="text-gray-400 text-sm">&copy; 2025 Harsh Mevada. All rights reserved.</p>
+    </footer>
+</body>
+</html>
